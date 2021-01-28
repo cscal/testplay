@@ -1,0 +1,11 @@
+---
+
+- name: greeting
+  shell: echo "Hello World!"
+
+- name: test sudo
+  file:
+    path: /root/test
+    owner: root
+    group: root
+    state: touch

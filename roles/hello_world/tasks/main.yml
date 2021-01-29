@@ -3,6 +3,13 @@
 - name: greeting
   shell: echo "Hello World!"
 
+- name: whoami
+  shell: whoami
+
+- name: whoami (become)
+  shell: whoami
+  become: yes
+
 - name: test sudo
   file:
     path: /root/test

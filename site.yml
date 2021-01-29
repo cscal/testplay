@@ -2,7 +2,6 @@
 
 - name: test play
   hosts: all
-  become: yes
-  #  become_user: ansible
+  remote_user: ansible
   roles:
     - hello_world
